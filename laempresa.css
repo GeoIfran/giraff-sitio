@@ -1,6 +1,8 @@
 .la_empresa{
+    margin: auto;
     display: grid;
     grid-template-columns: auto auto;
+    max-width: 80%;
 }
 .la_empresa div {
     padding: 1em;
@@ -11,4 +13,7 @@
 }
 .la_empresa img{
     min-width: 20em;
+}
+.la_empresa div p{
+    text-align: left;
 }
