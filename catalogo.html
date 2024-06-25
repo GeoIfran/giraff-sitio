@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Giraff Contacto</title>
+    <title>Giraff Catalogo</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="contacto.css">
+    <link rel="stylesheet" href="catalogo.css">
 </head>
 <body>
     <header>
@@ -22,34 +22,16 @@
             </ul>
         </nav>
     </header>
-    <main class="contacto">
-       <div id="datos_contacto">
-        <h3>Telefonos:</h3>
-        <p>+5411-4686-####</p>
-        <p>+5411-4687-####</p>
-        <h3>Correo electrónico:</h3>
-        <p><a href="mailto:contacto@giraff.com.ar">contacto@giraff.com.ar</a></p>
-       </div>
-       <div id="mapa">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.8498961555288!2d-58.50098285932154!3d-34.658493560506564!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc90575eae633%3A0xc389bfa962bdabc!2sTandil%206047%2C%20C1440%20AVY%2C%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1717025427225!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-       </div>
-       <form id="form_contacto" action="">
-        <h3>Déjenos su consulta</h3>
-        <label for="nombre">Nombre: </label><br>
-        <input name="nombre" id="nombre" type="text" required><br>
-        <label for="correo">Correo electrónico: </label><br>
-        <input type="email" id="correo" name="correo" required><br>
-        <label for="tema">Asunto: </label><br>
-        <select name="tema" id="tema" required>
-            <option value="Ventas">Consultar a un vendedor</option>
-            <option value="Compras">Consulta para el area de compras</option>
-            <option value="Otro">Otras consultas</option>
-        </select><br>
-        <label for="mensaje">Mensaje:</label><br>
-        <textarea name="mensaje" id="mensaje" rows="10" required></textarea><br>
-        <button type="submit">Enviar</button>
-        <button type="reset">Borrar</button>
-       </form>
+    <main>
+        <section class="catalogo">
+            <h1>Catalogo</h1>
+            <div class="listado">
+
+            </div>
+            <div class="detalle_producto">
+                
+            </div>
+        </section>
     </main>
     <footer id="pie" style="display: grid; grid-template-columns: auto auto auto auto; align-items: start; min-width: max-content; column-gap: 0.5em;">
         <div id="Isologo_pie" style="max-width: max-content; padding-left: 2em;">
@@ -85,16 +67,4 @@
         </div>
     </footer>
 </body>
-<script>
-    const nombreInput = document.querySelector('input[name="nombre"]');
-
-    nombreInput.addEventListener('blur', () => {
-        if (nombreInput.value.trim() === '') {
-            alert('Por favor, completa el campo de nombre.');
-            document.querySelector('input[name="nombre"]').ariaPlaceholder="Por favor escriba su mombre"
-        }
-    });
-
-    // Realizar otras validaciones para los demás campos...
-</script>
 </html>
