@@ -1,5 +1,7 @@
 /* Posicionamiento */
 .la_empresa {
+    margin: auto;
+    max-width: 80%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
@@ -16,7 +18,7 @@
     margin-bottom: 20px;
 }
 
-.parrafo1 { grid-area: parrafo1; }
+#parrafo1 { grid-area: parrafo1; }
 
 #imagen1 {
     grid-area: img1; 
