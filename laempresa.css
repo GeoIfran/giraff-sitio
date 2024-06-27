@@ -32,6 +32,7 @@
 
 .la_empresa img {
     width: 100%;
+    border:10px solid #635437;
 }
 
 .la_empresa div {
