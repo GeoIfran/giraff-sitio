@@ -1,9 +1,14 @@
-.contacto{
-    margin-left: auto;
+.contacto {
+    margin: auto;
     display: grid;
     grid-template-columns: auto auto;
     width: 80%;
+    padding: 2em 1em;
+}
 
+.contacto h3 {
+    color: #572500;
+    margin-bottom: 1em;
 }
 .contacto #mapa{
     grid-row-start: 1;
