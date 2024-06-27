@@ -7,8 +7,11 @@
 }
 
 .la_empresa h1 {
-    grid-column-start: 1;
-    grid-column-end: 4;
+    text-align: left;
+    font-weight: 300;
+    font-size: 3em;
+    color: #bc843c;
+    margin-bottom: 20px;
 }
 #parrafo1 {
     grid-column-start: 1;

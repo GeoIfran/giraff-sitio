@@ -1,5 +1,5 @@
 <?php
-echo '<footer id="pie" style="display: grid; grid-template-columns: auto auto auto auto; align-items: start; min-width: max-content; column-gap: 0.5em;">
+echo '<footer id="pie">
 <div id="Isologo_pie" style="max-width: max-content; padding-left: 2em;">
     <img id="logo-pie" src="imagenes/logo_white.png" class="logo" alt="Isologo que dice Giraff SRL marca registada">
     <div id="social_nav" style="display: grid; grid-template-columns: auto auto auto;">
@@ -19,7 +19,7 @@ echo '<footer id="pie" style="display: grid; grid-template-columns: auto auto au
     <h4><img src="imagenes/icono_contacto.png" alt="">CONTACTO</h4>
     <p>+5411-4687-9550<br>
     +5411-4686-4812<br>
-    <a href="mailto:contacto@geraff.com.ar">contacto@geraff.com.ar</a>
+    <a href="mailto:contacto@giraff.com.ar">contacto@giraff.com.ar</a>
     </p>
 </div>
 <div id="mapa_pie" style="padding-right: 2em;">
