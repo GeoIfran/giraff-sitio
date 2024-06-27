@@ -41,7 +41,7 @@ ocre_medio {
 }
 
 bordo_claro {
-  color: #a57a67
+  color: #ee7b66
 }
 
 /* Fuentes */
@@ -200,6 +200,14 @@ footer {
   color: white;
   text-align: center;
   padding: 1em 0;
+  display: grid; 
+  grid-template-columns: auto auto auto auto; 
+  align-items: start; 
+  min-width: max-content; 
+  column-gap: 0.5em;
+}
+#mapa_pie {
+  padding-right: 2em;
 }
 
 #mapa_pie ul {
@@ -227,12 +235,33 @@ footer a:hover {
   text-align: left;
   line-height:2em;
 }
+#Isologo_pie {
+  max-width: max-content; 
+  padding-left: 2em;
+}
+#social_nav {
+  display: grid; 
+  grid-template-columns: auto auto auto;
+}
+
 
 /* Estilos responsive */
-@media (min-width: 1200px) {
-    #pie {
-      border-bottom: 2em #aa6500 solid;
-    }
+@media (max-width: 1200px) {
+  footer {
+    display: grid; 
+    grid-template-columns: auto auto; 
+    align-items: center;
+    column-gap: 0.5em;
+  }
+  #dire_pie, #cont_pie, #mapa_pie {
+    text-align: center;
+    line-height:2em;
+    padding-bottom: 1em;
+  }
+  #Isologo_pie{
+    margin: auto;
+    justify-content: center;
+  }
 }
 @media (max-width: 768px) {
   .header-top {
@@ -251,5 +280,20 @@ footer a:hover {
 
   nav ul li {
     margin: 5px 0;
+  }
+  footer {
+    display: grid; 
+    grid-template-columns: auto; 
+    align-items: center;
+    
+  }
+  #dire_pie, #cont_pie, #mapa_pie {
+    text-align: center;
+    line-height:2em;
+    padding-bottom: 1em;
+  }
+  #Isologo_pie{
+    margin: auto;
+    justify-content: center;
   }
 }

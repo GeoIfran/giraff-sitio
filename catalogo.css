@@ -1,0 +1,9 @@
+.catalogo{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    color: white;
+    padding: 1em 2em;
+    max-width: 1100px;
+    margin: 0 auto;
+}
