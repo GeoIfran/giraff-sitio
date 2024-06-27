@@ -1,9 +1,11 @@
 /* Posicionamiento */
-.la_empresa{
-    margin: auto;
+.la_empresa {
     display: grid;
-    grid-template-columns: auto auto auto;
-    max-width: 80%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 5%;
+    grid-template-areas:
+        "parrafo1 img1";
 }
 
 .la_empresa h1 {
@@ -13,48 +15,20 @@
     color: #bc843c;
     margin-bottom: 20px;
 }
-#parrafo1 {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 3;
-    margin-left: auto;
-    margin-right: 1em;
+
+.parrafo1 { grid-area: parrafo1; }
+
+#imagen1 {
+    grid-area: img1; 
 }
 
-#parrafo2{
-    grid-column-start: 3;
-    grid-column-end: 4;
-    grid-row-start: 4;
-    grid-row-end: 5;
-    margin-left: 1em;
-    margin-right: auto;
-}
- 
-#imagen1{
-    grid-column-start: 3;
-    grid-column-end: 4;
-    grid-row-start: 2;
-    grid-row-end: 4;
-    margin-left: 1em;
-    margin-right: auto;
-}
-
-#imagen2{
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 3;
-    grid-row-end: 5;
-    margin-left: auto;
-    margin-right: 1em;
-}
-
-.la_empresa div p{
+.la_empresa div p {
     text-align: left;
     margin-bottom: 1em;
 }
-.la_empresa img{
-    max-width: 40em;
+
+.la_empresa img {
+    width: 100%;
 }
 
 .la_empresa div {

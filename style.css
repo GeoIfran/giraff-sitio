@@ -163,6 +163,7 @@ nav ul li a {
   padding: 10px 20px;
   display: block;
   transition: all ease 0.5s;
+  font-size: 1.25em;
 }
 
 nav ul li a:hover {
@@ -197,7 +198,7 @@ h2 {
 /* Pie de página */
 footer {
   background-color: #bc843c;
-  border-bottom: 40px solid #aa6500;
+  border-bottom: 32px solid #aa6500;
   color: white;
   text-align: center;
   padding: 1.5em 0;
