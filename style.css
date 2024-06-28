@@ -252,7 +252,7 @@ footer a {
 }
 
 footer a:hover {
-  color: #555;
+  text-decoration: underline;
 }
 
 #dire_pie,

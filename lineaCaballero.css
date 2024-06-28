@@ -1,9 +1,9 @@
-h1{
-    background-color: #bc843a;
-    color: white;
-    max-width: 1100px;
-    margin: auto;
-    
+h1 {
+    text-align: left;
+    font-weight: 300;
+    font-size: 3em;
+    color: #bc843c;
+    margin-bottom: 20px;
 }
 .categoria_catalogo{
     text-align: left;
