@@ -276,7 +276,7 @@ footer a:hover {
 
 /* Estilos responsive */
 @media (max-width: 1200px) {
-  footer {
+  #pie {
     display: grid;
     grid-template-columns: auto auto;
     align-items: center;
@@ -316,16 +316,14 @@ footer a:hover {
     margin: 5px 0;
   }
 
-  footer {
+  #pie {
     display: grid;
     grid-template-columns: auto;
     align-items: center;
 
   }
 
-  #dire_pie,
-  #cont_pie,
-  #mapa_pie {
+  #dire_pie   #cont_pie  #mapa_pie {
     text-align: center;
     line-height: 2em;
     padding-bottom: 1em;
