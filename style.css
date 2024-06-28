@@ -196,10 +196,25 @@ h2 {
 }
 
 #catalogo_home {
+  width: 80%;
+  max-width: 1000px;
+  margin: auto;
   display: grid;
   grid: repeat(2, 1fr);
+  font-size: 3em;
+  font-weight: 600;
+  color: #fff;
 }
 
+#cat_dama { grid-area: 1 / 1 / 2 / 2;   position: relative; background-color:#ef7c67; }
+#cat_caballero { grid-area: 1 / 2 / 2 / 3;   position: relative; background-color: #bc843a;}
+
+#cat_dama img,
+#cat_caballero img{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
 
 /* Pie de página */
 footer {
