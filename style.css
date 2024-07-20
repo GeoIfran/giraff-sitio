@@ -196,9 +196,19 @@ h2 {
 }
 
 #catalogo_home {
+  width: 80%;
+  max-width: 950px;
+  margin: auto;
   display: grid;
-  grid: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 3em;
+  grid-row-gap: 1em;
 }
+
+#cat_dama { grid-area: 1 / 1 / 2 / 2;  /* position: relative; background-color:#ef7c67; */}
+#cat_caballero { grid-area: 1 / 2 / 2 / 3;  /* position: relative; background-color: #bc843a;*/}
+
 
 
 /* Pie de página */
@@ -242,7 +252,7 @@ footer a {
 }
 
 footer a:hover {
-  color: #555;
+  text-decoration: underline;
 }
 
 #dire_pie,

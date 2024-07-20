@@ -1,9 +1,10 @@
-h1{
-    background-color: #bc843a;
-    color: white;
-    max-width: 1100px;
-    margin: auto;
-    
+h1 {
+    text-align: center;
+    margin-top:2em;
+    font-weight: 300;
+    font-size: 3em;
+    color: #bc843c;
+    margin-bottom: 20px;
 }
 .categoria_catalogo{
     text-align: left;
@@ -20,9 +21,17 @@ h1{
    width: 100%;
     
 }
+.lista_productos div {
+    background-color: white;
+    color: black;
+}
+.lista_productos p {
+   padding-left: 1em;
+   padding-bottom: 1em;
+}
 .lista_productos{
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: repeat(4, 1fr);
     gap: 1em;
     margin: auto;
     max-width: 1100px;
