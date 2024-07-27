@@ -30,6 +30,18 @@ h1 {
     max-width: 1100px;
     padding-top: 1em;
 }
+.lista_productos div {
+    background-color: white;
+    color: black;
+    padding-bottom: 1em;
+}
+.lista_productos h3 {
+    margin-left: 1.5em;
+    margin-bottom: 0.5em;
+}
+.lista_productos ul {
+    margin-left: 1.7em;
+}
 @media (max-width: 768px){
     .lista_productos{
         display: grid;
