@@ -266,7 +266,14 @@ footer a:hover {
   max-width: max-content;
   padding-left: 2em;
 }
-
+#pie_whatsapp{
+  display: inline-block;
+}
+#pie_whatsapp img{
+  width: 1.2em; 
+  margin: 0.1en; 
+  vertical-align: middle;
+}
 #social_nav {
   display: grid;
   grid-template-columns: auto auto auto;

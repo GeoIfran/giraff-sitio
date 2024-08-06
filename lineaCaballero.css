@@ -41,6 +41,7 @@ h1 {
 .lista_productos ul {
     margin-left: 1.7em;
 }
+
 @media (max-width: 768px){
     .lista_productos{
         display: grid;
