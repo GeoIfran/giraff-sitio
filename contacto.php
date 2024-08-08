@@ -38,8 +38,9 @@
                 <p><a href="mailto:info@giraff.com.ar">info@giraff.com.ar</a></p>
                 <br>
             </div>
-            <form id="form_contacto" action="">
-                <h3>D&eacutejenos su consulta:</h3><br>
+            <?php if (!$_POST){ ?>
+            <form id="form_contacto" action="contacto.php" method=post>
+                <h3>Déjenos su consulta:</h3><br>
                 <label for="nombre">Nombre: </label><br>
                 <input name="nombre" id="nombre" type="text" required><br><br>
                 <label for="correo">Correo electr&oacutenico: </label><br>
@@ -55,6 +56,22 @@
                 <button type="submit">Enviar</button>
                 <button type="reset">Borrar</button>
             </form>
+            <?php }else{
+                //Estoy recibiendo el formulario, compongo el cuerpo
+                $cuerpo = "Formulario enviado desde la web\n";
+                $cuerpo .= "Sobre: " . $_POST["tema"] . "\n";
+                $cuerpo = "De:\n";
+                $cuerpo .= "Nombre: " . $_POST["nombre"] . "\n";
+                $cuerpo .= "Email: " . $_POST_["email"] . "\n";
+                $cuerpo .= "Mensaje: " . $_POST_["mensaje"] . "\n";
+
+                //mando el correo...
+                mail("geovifran@gmail.com","Formulario recibido desde la web sobre ".$_POST["tema"],$cuerpo);
+
+                //doy las gracias por el envío
+                echo "Gracias por rellenar el formulario. Se ha enviado correctamente.";
+            }
+            ?>
         </div>
         <div id="mapa">
             <iframe
@@ -77,8 +94,7 @@
             <h4><img src="imagenes/icono_mapa.png" alt="">DIRECCI&OacuteN</h4>
             <p><a href="https://maps.app.goo.gl/5cuY8rSAmrbCpiSS8" target="_blank">Tandil 6047/49 <br>
                     C1440AVY -<br>
-                    Ciudad Aut&oacute
-                    noma de Buenos Aires<br>
+                    Ciudad Aut&oacutenoma de Buenos Aires<br>
                     Argentina</a></p>
         </div>
         <div id="cont_pie">
