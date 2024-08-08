@@ -3,61 +3,67 @@ h1 {
     margin-top: 1.5em;
     font-weight: 300;
     font-size: 3em;
-    color:  #bc843c;
+    color: #bc843c;
     margin-bottom: 20px;
 }
 .contacto {
     margin: auto;
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(1, auto);
     padding: 1em 2em;
     max-width: 1100px;
+    margin-bottom: 2em;
 }
-
 .contacto h3 {
     color: #572500;
-    margin-bottom: 1em;
 }
-.contacto #mapa{
-    grid-row-start: 1;
-    grid-row-end: 3;
-    grid-column-start: 2;
-    grid-column-end: 3;
-}
-.contacto #nombre{
+.contacto #nombre {
     width: 90%;
 }
-.contacto #tema{
+.contacto #tema {
     width: 90%;
     font-size: 1em;
 }
-.contacto #mensaje{
+.contacto #mensaje {
     width: 90%;
 }
-.contacto #correo{
+.contacto #correo {
     width: 90%;
 }
-.contacto div{
+.contacto div {
     text-align: left;
 }
 .contacto form {
     text-align: left;
 }
-.contacto button{
+.contacto button {
     font-size: 1em;
-    padding: 0.5em;
+    padding: 0.5em 1em;
     background-color: #bc843c;
     color: white;
     border: none;
     font-weight: 700;
+    margin-right: 1em;
 }
-.contacto button:hover{
-    background-color: #555;
+.contacto button:hover {
+    background-color: #745224;
+    cursor: pointer;
 }
-.contacto a:hover{
-    color: #555;
+.contacto a:hover {
+    color: #745224
 }
 .contacto a {
     color: black;
     text-decoration: none;
+}
+@media (max-width: 768px) {
+    .contacto {
+
+        grid-template-columns: repeat(1, auto);
+        grid-template-rows: repeat(2, auto);
+    }
+    .contacto>div {
+        margin-bottom: 2em;
+    }
 }
