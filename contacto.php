@@ -40,7 +40,7 @@
             </div>
             <?php if (!$_POST){ ?>
             <form id="form_contacto" action="contacto.php" method=post>
-                <h3>Déjenos su consulta:</h3><br>
+                <h3>D&eacutejenos su consulta:</h3><br>
                 <label for="nombre">Nombre: </label><br>
                 <input name="nombre" id="nombre" type="text" required><br><br>
                 <label for="correo">Correo electr&oacutenico: </label><br>
